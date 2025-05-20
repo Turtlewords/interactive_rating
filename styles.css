@@ -94,7 +94,6 @@ input[type="radio"] {
   }
 
 .lbl-btn {
-    display: inline-block;
     cursor: pointer;
     border-radius: 50%;
     padding: .75rem;
