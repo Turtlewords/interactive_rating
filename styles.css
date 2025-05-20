@@ -37,3 +37,27 @@
 body {
     font-family: 'Overpass', sans-serif;
 }
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.radio-container label {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+    padding: .75rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--grey-950);
+  }
+
+  input[type="radio"] {
+    display:none;
+  }
+
+  .radio-container input[type="radio"]:checked+label {
+  
+}

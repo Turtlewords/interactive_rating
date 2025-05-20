@@ -7,22 +7,47 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Interactive rating component</title>
-
-  
 </head>
 <body>
 
   <!-- Rating state start -->
 
-  How did we do?
+  <main>
+    <img src="images/icon-star.svg" alt="icon of a star">
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</p>
+    <form id="button-box">
+      <fieldset>
+        <div class="radio-container">
+          <label for="radio-one" class="lbl-btn" tabindex="0" role="button"></label>
+          <input type="radio" id="radio-one" name="options">
+        </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <div class="radio-container">
+          <label for="radio-two" class="lbl-btn" tabindex="0" role="button"></label>
+          <input type="radio" id="radio-two" name="options">
+        </div>
 
-  1 2 3 4 5
+        <div class="radio-container">
+          <label for="radio-three" class="lbl-btn" tabindex="0" role="button"></label>
+          <input type="radio" id="radio-three" name="options">
+        </div>
 
-  Submit
+        <div class="radio-container">
+          <label for="radio-four" class="lbl-btn" tabindex="0" role="button"></label>
+          <input type="radio" id="radio-four" name="options">
+        </div>
 
+        <div class="radio-container">
+          <label for="radio-five" class="lbl-btn" tabindex="0" role="button"></label>
+          <input type="radio" id="radio-five" name="options">
+        </div>
+      </fieldset>
+      <input type="submit" id="submit-btn">
+    </form>
+  </main>
+  
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
