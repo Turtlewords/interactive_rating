@@ -36,28 +36,51 @@
 
 body {
     font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    padding: 1rem;
+    background: var(--gradient-1);
 }
 
 fieldset {
     border: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
-.radio-container label {
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 16px;
-    padding: .75rem;
+.radio-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: var(--grey-950);
-  }
+}
 
-  input[type="radio"] {
+input[type="radio"] {
     display:none;
   }
 
-  .radio-container input[type="radio"]:checked+label {
+.lbl-btn {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: .75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey-900);
+    color: var(--grey-500);
+    width: 40px;
+    height: 40px;
+  }
+
+
+
   
-}
