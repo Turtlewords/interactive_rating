@@ -1,0 +1,39 @@
+:root {
+
+    /* Spacing */
+
+    --space-0: 0px;
+    --space-100: 8px;
+    --space-200: 16px;
+    --space-300: 24px;
+    --space-400: 32px;
+    --space-500: 40px;
+    --space-1300: 104px;
+    --space-1700: 136px;
+
+    /* Colors */
+
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey-500: #969FAD;
+    --grey-900: #262E38;
+    --grey-950: #131518;
+    --orange-500: #FC7614;
+
+    --gradient-1: linear-gradient(#232A34, #181E27);
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url("Overpass/Overpass-VariableFont_wght.ttf");
+    font-weight: 100 900;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
