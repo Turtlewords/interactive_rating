@@ -1,5 +1,22 @@
 const radios = document.querySelectorAll("input[type='radio']");
 const labels = document.querySelectorAll(".lbl-btn")
+const submitBtn = document.querySelector("#submit-btn");
+const home = document.querySelector("#home");
+const thankYou = document.querySelector("#thank-you");
+const rating = document.querySelector("#rating");
+
+
+
+submitBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (!radioSelected()) {
+        alert("Please select a rating value");
+        return;
+    }
+
+    submitRating();
+    
+})
 
 radios.forEach((radio) => {
     radio.addEventListener("change", () => {
@@ -31,3 +48,28 @@ labels.forEach((label) => {
     })
 })
 
+
+function submitRating() {
+    home.style.display = "none";
+    thankYou.style.display = "flex";
+
+    let score;
+
+    for (let x of radios) {
+        if(x.checked) {
+            score = x.value;
+        }
+    }
+
+    rating.textContent = score;
+}
+
+
+function radioSelected() {
+    for (let x of radios) {
+        if (x.checked) {
+            return true;
+        }
+    }
+    return false;
+}
