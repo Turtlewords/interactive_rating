@@ -32,6 +32,15 @@ radios.forEach((radio) => {
 })
 
 labels.forEach((label) => {
+    label.addEventListener("keypress", (e) => {
+        if (e.key == "Enter" || e.key == " ") {
+            e.preventDefault();
+            label.parentElement.querySelector('input[type="radio"]').click();
+        }
+    })
+})
+
+labels.forEach((label) => {
     label.addEventListener("mouseover", () => {
         label.style.backgroundColor = "#FC7614";
     })
